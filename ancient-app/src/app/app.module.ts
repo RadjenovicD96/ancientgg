@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { PostsComponent } from './posts/posts.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './common/page-not-found/page-not-found.component';
+import { GraphQLModule } from './graphql.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -13,7 +15,7 @@ import { PageNotFoundComponent } from './common/page-not-found/page-not-found.co
     HomeComponent,
     PageNotFoundComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, GraphQLModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })
